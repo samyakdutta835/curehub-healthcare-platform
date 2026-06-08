@@ -1,18 +1,3 @@
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -1304,6 +1289,80 @@ transform:translateY(-8px);
   .container {
     max-width: 940px;
   }
+
+  /* ==========================
+   Mobile Responsive Fixes
+========================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    --section-padding: 140px;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    padding-inline-start: 40px;
+    font-size: 1.4rem;
+  }
+
+  .hero-subtitle::before {
+    width: 30px;
+  }
+
+  .hero-tagline {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-stats h3 {
+    font-size: 2.6rem;
+  }
+
+  .hero-card {
+    padding: 20px;
+  }
+
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    padding: 30px 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 
 
