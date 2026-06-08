@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    background:#f7f9fa;
+    color:#333;
+    line-height:1.8;
+}
+
+/* HERO */
+
+.hero{
+    min-height:40vh;
+
+    background:
+    linear-gradient(
+    rgba(0,87,97,.92),
+    rgba(0,87,97,.92));
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:clamp(2rem,5vw,4rem);
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    color:#e4f4f5;
+    font-size:1.1rem;
+}
+
+/* CONTENT */
+
+.privacy-container{
+    padding:80px 8%;
+}
+
+.privacy-card{
+    background:#fff;
+
+    max-width:1000px;
+    margin:auto;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.privacy-card h2{
+    color:#005761;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.privacy-card p{
+    margin-bottom:15px;
+}
+
+.privacy-card ul{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+
+.privacy-card ul li{
+    margin-bottom:10px;
+}
+
+.last-update{
+    margin-top:40px;
+
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+
+    font-weight:600;
+    color:#005761;
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+
+    .privacy-container{
+        padding:60px 20px;
+    }
+
+    .privacy-card{
+        padding:35px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+    .hero{
+        min-height:30vh;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+    .privacy-card{
+        padding:25px 20px;
+        border-radius:15px;
+    }
+
+    .privacy-card h2{
+        font-size:1.3rem;
+    }
+
+    .privacy-card ul{
+        margin-left:20px;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: #005761;
+}
+

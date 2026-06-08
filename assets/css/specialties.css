@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+body{
+    background:#f7f9fa;
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+    min-height:50vh;
+    background:linear-gradient(
+    rgba(0,87,97,.90),
+    rgba(0,87,97,.90)),
+    url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0f?w=1600');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:clamp(2.2rem,5vw,4rem);
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    color:#fff;
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* INTRO */
+
+.intro{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.intro h2{
+    color:#005761;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.intro p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* SPECIALTIES */
+
+.specialties{
+    padding:0 8% 80px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.specialty-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.specialty-card:hover{
+    transform:translateY(-10px);
+}
+
+.specialty-card i{
+    font-size:2.5rem;
+    color:#005761;
+    margin-bottom:20px;
+}
+
+.specialty-card h3{
+    margin-bottom:12px;
+    color:#005761;
+}
+
+.specialty-card p{
+    line-height:1.7;
+}
+
+/* FEATURES */
+
+.features{
+    background:#fff;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.features h2{
+    color:#005761;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:#f7f9fa;
+    padding:30px;
+    border-radius:20px;
+}
+
+.feature-box i{
+    font-size:2.5rem;
+    color:#005761;
+    margin-bottom:20px;
+}
+
+/* CTA */
+
+.cta{
+    background:#005761;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#d7e8ea;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#fff;
+    color:#005761;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+
+    .intro{
+        padding:60px 20px;
+    }
+
+    .specialties{
+        padding:0 20px 60px;
+    }
+
+    .features{
+        padding:60px 20px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+    .hero{
+        min-height:40vh;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+    .specialty-card,
+    .feature-box{
+        padding:25px;
+    }
+}
