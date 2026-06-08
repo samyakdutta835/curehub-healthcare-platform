@@ -1,0 +1,244 @@
+*{
+font-family:'Inter',sans-serif;
+}
+
+.section{
+padding:100px 0;
+}
+
+.about-hero{
+background:#0A1931;
+color:#fff;
+text-align:center;
+padding:150px 20px 100px;
+}
+
+.about-hero h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.about-hero p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:rgba(255,255,255,.8);
+}
+
+.story-content{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.story-content h2{
+font-size:42px;
+color:#0f6c78;
+margin-bottom:30px;
+}
+
+.story-content p{
+line-height:1.9;
+font-size:18px;
+color:#666;
+}
+
+.mission-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.mission-card{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.mission-card h3{
+color:#0f6c78;
+margin-bottom:20px;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:50px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+font-weight:600;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.stat-card{
+background:#0f6c78;
+padding:50px;
+border-radius:20px;
+color:white;
+text-align:center;
+}
+
+.stat-card h2{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+margin-top:50px;
+}
+
+.team-card{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.team-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.team-card h3{
+color:#0f6c78;
+margin-bottom:10px;
+}
+
+.cta{
+background:#0f6c78;
+padding:100px 20px;
+text-align:center;
+color:white;
+}
+
+.cta h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+@media(max-width:768px){
+
+.about-hero h1{
+font-size:42px;
+}
+
+.features-grid,
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* ===== Tablet ===== */
+
+@media (max-width:992px){
+
+    .about-hero h1{
+        font-size:50px;
+    }
+
+    .features-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width:768px){
+
+    .section{
+        padding:70px 0;
+    }
+
+    .about-hero{
+        padding:120px 20px 80px;
+    }
+
+    .about-hero h1{
+        font-size:40px;
+    }
+
+    .about-hero p{
+        font-size:16px;
+    }
+
+    .mission-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .story-content h2,
+    .why-us h2,
+    .team h2{
+        font-size:32px;
+    }
+
+    .cta h2{
+        font-size:34px;
+    }
+
+}
+
+/* ===== Small Phones ===== */
+
+@media (max-width:576px){
+
+    .about-hero h1{
+        font-size:34px;
+    }
+
+    .mission-card,
+    .feature,
+    .team-card,
+    .stat-card{
+        padding:30px;
+    }
+
+    .team-card img{
+        width:120px;
+        height:120px;
+    }
+
+}
