@@ -1561,4 +1561,8 @@ transform:translateY(-8px);
 
 }
 
+.linklink{
+  color: inherit;
+  text-decoration: none;
+}
 
